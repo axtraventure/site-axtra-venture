@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axtra Venture | Google Meu Negócio em Estância Velha</title>
+    <meta name="description" content="Especialistas em Google Meu Negócio em Estância Velha. SEO Local, Fotos 360º e Tour Virtual para sua empresa aparecer no topo do Google Maps.">
+    <meta name="keywords" content="Google Meu Negócio, Posicionamento no Google Meu Negócio, SEO Local, Fotos 360 para empresas, Tour Virtual Google, Google Maps para empresas">
+    <link rel="canonical" href="https://www.axtraventure.com.br/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Axtra Venture | Google Meu Negócio em Estância Velha">
+    <meta property="og:description" content="Especialistas em Google Meu Negócio em Estância Velha. SEO Local, Fotos 360º e Tour Virtual para sua empresa aparecer no topo do Google Maps.">
+    <meta property="og:image" content="https://www.axtraventure.com.br/assets/img/og-image.jpg">
+    <meta property="og:url" content="https://www.axtraventure.com.br/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Axtra Venture | Google Meu Negócio em Estância Velha">
+    <meta name="twitter:description" content="Especialistas em Google Meu Negócio em Estância Velha. SEO Local, Fotos 360º e Tour Virtual para sua empresa aparecer no topo do Google Maps.">
+    <meta name="twitter:image" content="https://www.axtraventure.com.br/assets/img/og-image.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png?v=1.1">
+
+    <!-- CSS / Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=1.0">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#84c77e',
+                            hover: '#6ebc68',
+                            dark: '#000000',
+                            gray: '#b0b4ba',
+                            light: '#f5f6f8',
+                            extralight: '#ffffff',
+                            accent: '#84c77e',
+                            accentlight: '#e2f4e0',
+                            black: '#000000',
+                            nav: '#ffffff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.axtraventure.com.br/#organization",
+          "name": "Axtra Venture",
+          "url": "https://www.axtraventure.com.br/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.axtraventure.com.br/assets/img/logo.png"
+          },
+          "sameAs": [
+            "https://facebook.com/axtraventure",
+            "https://instagram.com/axtraventure"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://www.axtraventure.com.br/#localbusiness",
+          "name": "Axtra Venture",
+          "url": "https://www.axtraventure.com.br/",
+          "telephone": "+55-51-99881-0128",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Machado de Assis 320, Centro, Galeria Nordio",
+            "addressLocality": "Estância Velha",
+            "addressRegion": "RS",
+            "postalCode": "93600-450",
+            "addressCountry": "BR"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          "image": "https://www.axtraventure.com.br/assets/img/og-image.jpg"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.axtraventure.com.br/#website",
+          "url": "https://www.axtraventure.com.br/",
+          "name": "Axtra Venture | Google Meu Negócio em Estância Velha",
+          "publisher": {
+            "@id": "https://www.axtraventure.com.br/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.axtraventure.com.br/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quanto tempo leva para ver resultados?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Geralmente, as melhorias começam a ser notadas nas primeiras semanas após a otimização completa do perfil, com crescimento contínuo ao longo dos meses."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Preciso ter um site para estar no Google Meu Negócio?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não, o Google Meu Negócio funciona de forma independente. Porém, ter um site aumenta ainda mais sua autoridade e opções de conversão."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Vocês atendem empresas fora do Rio Grande do Sul?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim! Nossos serviços de otimização de perfil, gestão e SEO Local podem ser realizados para empresas de qualquer lugar do Brasil."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona as Fotos 360 e o Tour Virtual?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Utilizamos equipamentos específicos para captar imagens imersivas de todos os ângulos do seu ambiente. Depois, conectamos essas fotos diretamente no Google Maps."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.axtraventure.com.br/#service1",
+          "name": "Posicionamento no Google Meu Negócio",
+          "description": "Estratégias completas para aumentar a visibilidade da empresa nas pesquisas locais do Google.",
+          "provider": {
+            "@id": "https://www.axtraventure.com.br/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.axtraventure.com.br/#service2",
+          "name": "Fotos 360º",
+          "description": "Produção de fotos 360º profissionais para destacar a empresa no Google e transmitir mais credibilidade.",
+          "provider": {
+            "@id": "https://www.axtraventure.com.br/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.axtraventure.com.br/#service3",
+          "name": "Tour Virtual",
+          "description": "Tour virtual integrado ao Google para melhorar a experiência do cliente e aumentar a confiança no negócio.",
+          "provider": {
+            "@id": "https://www.axtraventure.com.br/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.axtraventure.com.br/#service4",
+          "name": "SEO Local Estratégico",
+          "description": "Estratégias para colocar sua empresa nas primeiras posições quando buscarem pelos seus serviços.",
+          "provider": {
+            "@id": "https://www.axtraventure.com.br/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.axtraventure.com.br/#service5",
+          "name": "Gestão de Avaliações",
+          "description": "Técnicas para obter mais reviews positivos e melhorar a nota da sua empresa no Google.",
+          "provider": {
+            "@id": "https://www.axtraventure.com.br/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.axtraventure.com.br/#service6",
+          "name": "Atualizações e Google Posts",
+          "description": "Manutenção do perfil sempre ativo com novidades, ofertas e postagens relevantes.",
+          "provider": {
+            "@id": "https://www.axtraventure.com.br/#organization"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.axtraventure.com.br/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.axtraventure.com.br/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="antialiased font-inter text-[#353738] bg-[#F6F7FB]" x-data="{ mobileMenuOpen: false }">
+
+    <!-- HEADER (2 Faixas) -->
+    <header class="w-full z-50 sticky top-0 shadow-sm bg-brand-nav">
+        <!-- Faixa Superior -->
+        <div class="bg-brand-green text-[#F0F0F0] text-[13px] py-2 hidden md:block">
+            <div class="max-w-[1280px] mx-auto px-4 flex justify-between items-center">
+                <div class="flex space-x-6">
+                    <span class="flex items-center"><i class="fas fa-phone mr-2"></i> +55 (51) 99881-0128</span>
+                    <span class="flex items-center"><i class="far fa-clock mr-2"></i> Segunda a Sexta das 09:00 às 18:00</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com/axtraventure" target="_blank" aria-label="Instagram" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/axtraventure" target="_blank" aria-label="Facebook" class="hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faixa Principal -->
+        <div>
+            <div class="max-w-[1280px] mx-auto px-4 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <div class="w-[20%] md:w-[20%] w-[80%]">
+                    <a href="#hero">
+                        <img src="/assets/img/logo-principal.png?v=1.1" alt="Axtra Venture" class="h-[35px] md:h-[49px] w-auto">
+                    </a>
+                </div>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex w-[65%] justify-end space-x-8 font-outfit font-semibold text-[16px] text-brand-dark">
+                    <a href="#hero" class="hover:text-brand-hover transition">Início</a>
+                    <a href="#sobre" class="hover:text-brand-hover transition">Sobre</a>
+                    <a href="#servicos" class="hover:text-brand-hover transition">Serviços</a>
+                    <a href="#como-funciona" class="hover:text-brand-hover transition">Como Funciona</a>
+                    <a href="#faq" class="hover:text-brand-hover transition">FAQ</a>
+                </nav>
+
+                <!-- CTA Desktop -->
+                <div class="hidden md:flex w-[15%] justify-end">
+                    <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Fale Conosco</a>
+                </div>
+
+                <!-- Hamburger Mobile -->
+                <div class="md:hidden flex items-center">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Menu" class="text-brand-dark text-2xl focus:outline-none">
+                        <i class="fas" :class="mobileMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-brand-green text-white absolute w-full left-0 shadow-lg">
+            <nav class="flex flex-col py-4 font-outfit font-semibold text-[16px]">
+                <a href="#hero" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Início</a>
+                <a href="#sobre" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Sobre</a>
+                <a href="#servicos" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Serviços</a>
+                <a href="#como-funciona" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Como Funciona</a>
+                <a href="#faq" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">FAQ</a>
+                <a href="https://wa.me/5551998810128" @click="mobileMenuOpen = false" class="px-6 py-4 mt-2 text-center bg-white text-brand-green mx-4 rounded-[21px]">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 1: HERO -->
+        <section id="hero" class="relative overflow-hidden pt-28 pb-40 md:pt-28 md:pb-40 lg:pt-[7em] lg:pb-[10em]">
+            <!-- Slideshow Background (Simulado com 1 imagem placeholder) -->
+            <div class="absolute inset-0 z-0 bg-brand-black ken-burns-bg">
+                <!-- Mobile Background -->
+                <img src="/assets/img/hero-mobile.webp?v=1.1" alt="Empresas posicionadas no Google Meu Negócio em Estância Velha" class="block md:hidden w-full h-full object-cover opacity-70" loading="lazy">
+                <!-- Desktop Background -->
+                <img src="/assets/img/hero-principal.webp?v=1.1" alt="Empresas posicionadas no Google Meu Negócio em Estância Velha" class="hidden md:block w-full h-full object-cover opacity-70" loading="lazy">
+            </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 z-10 bg-gradient-to-br from-[#080C14] to-transparent opacity-90"></div>
+            
+            <div class="relative z-20 max-w-[1280px] mx-auto px-4 md:px-8">
+                <div class="w-full md:w-[65%] lg:w-[50%]">
+                    <h1 class="text-white text-[32px] md:text-[44px] lg:text-[61px] font-bold font-outfit leading-[1.1] tracking-[-1px] mb-6 drop-shadow-md">
+                        Especialista em Google Meu Negócio em Estância Velha RS
+                    </h1>
+                    <p class="text-white text-[16px] mb-8 drop-shadow-sm font-inter">
+                        A Axtra Venture ajuda empresas a melhorarem seu posicionamento no Google Meu Negócio, aumentando a presença no Google Maps e nas pesquisas locais.
+                        Com estratégias de SEO Local, fotos 360º e tour virtual, sua empresa ganha mais credibilidade e oportunidades de negócio.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/5551998810128" target="_blank" class="btn-secondary">Falar no WhatsApp</a>
+                        <a href="#servicos" class="btn-primary" style="background-color: transparent; border-color: white;">Conhecer os Serviços</a>
+                    </div>
+                    <p class="text-white text-sm mt-4 opacity-80">Atendimento estratégico para empresas de todo o Brasil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: BARRA DE CREDIBILIDADE (Contato Flutuante) -->
+        <section id="credibilidade" class="relative z-30 max-w-[1280px] mx-auto px-4 mt-[-6em] mb-[7em]">
+            <div class="bg-white rounded-[15px] shadow-[0_0_60px_rgba(0,0,0,0.1)] flex flex-col md:flex-row overflow-hidden">
+                <!-- Coluna Esquerda: Ícones de Contato (35%) -->
+                <div class="w-full md:w-[35%] bg-gradient-to-br from-brand-accent to-brand-green p-8 text-white relative">
+                    <div class="relative z-10 h-full flex flex-col justify-center gap-8">
+                        <div class="flex items-center">
+                            <div class="w-[50px] h-[50px] rounded-full bg-brand-green flex items-center justify-center mr-4">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <span class="block text-[12px] font-bold tracking-widest uppercase opacity-80 font-outfit">Fale Conosco</span>
+                                <p class="text-[18px] font-semibold font-outfit">+55 (51) 99881-0128</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-[50px] h-[50px] rounded-full bg-brand-green flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <span class="block text-[12px] font-bold tracking-widest uppercase opacity-80 font-outfit">Atendimento</span>
+                                <p class="text-[16px] font-semibold font-outfit">Todo Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coluna Direita: Features Credibilidade (65%) -->
+                <div class="w-full md:w-[65%] p-8 flex items-center bg-white">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
+                            <p class="font-inter text-[#353738] font-medium">Especialização focada em Google Meu Negócio</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
+                            <p class="font-inter text-[#353738] font-medium">Estratégias voltadas para SEO Local</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
+                            <p class="font-inter text-[#353738] font-medium">Atendimento personalizado para empresas</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
+                            <p class="font-inter text-[#353738] font-medium">Presença digital focada em resultados reais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: SOBRE / QUEM SOMOS -->
+        <section id="sobre" class="py-[4em] md:py-[7em] max-w-[1280px] mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <!-- Esquerda -->
+                <div class="w-full md:w-[45%]">
+                    <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Quem Somos</span>
+                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-6 leading-tight font-outfit text-brand-dark">
+                        Especialistas em Google Meu Negócio e SEO Local em Estância Velha
+                    </h2>
+                    <p class="text-[#353738] mb-6">
+                        A Axtra Venture é especializada em estratégias de posicionamento no Google, ajudando empresas a se destacarem nas buscas locais e no Google Maps. Nosso objetivo é conectar o seu negócio com clientes que já estão procurando pelo que você oferece.
+                    </p>
+                    <p class="text-[#353738] mb-8">
+                        Com soluções completas, desde a otimização de perfis até fotos 360º e tours virtuais, entregamos resultados que fazem a diferença na autoridade e visibilidade digital da sua marca.
+                    </p>
+                    <div class="h-[1px] bg-[#DCDCDE] w-full mb-8"></div>
+                    <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Fale com um Especialista</a>
+                </div>
+                <!-- Direita -->
+                <div class="w-full md:w-[55%] relative">
+                    <img src="/assets/img/sobre-empresa.webp?v=1.1" alt="Equipe Axtra Venture especialista em Google Meu Negócio" class="w-full h-auto rounded-[15px] shadow-lg" loading="lazy">
+                    <div class="absolute -bottom-6 -left-6 bg-brand-accent p-6 rounded-[15px] shadow-xl text-brand-dark flex flex-col items-center justify-center">
+                        <span class="text-[40px] font-bold font-outfit leading-none">100%</span>
+                        <span class="text-[14px] font-medium uppercase tracking-widest mt-1">Foco em Resultados</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: LOGOS (Empresas Atendidas) -->
+        <section class="bg-brand-extralight py-[4em]">
+            <div class="max-w-[1280px] mx-auto px-4 text-center">
+                <h2 class="text-[24px] md:text-[30px] font-semibold mb-8 text-brand-dark font-outfit">Empresas que confiam em nosso trabalho</h2>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+                    <img src="/assets/img/logo-cliente-1.webp" alt="Logo de empresa cliente atendida pela Axtra Venture" class="h-[40px] md:h-[60px] object-contain" loading="lazy">
+                    <img src="/assets/img/logo-cliente-2.webp" alt="Logo de empresa parceira da Axtra Venture" class="h-[40px] md:h-[60px] object-contain" loading="lazy">
+                    <img src="/assets/img/logo-cliente-3.webp" alt="Logo de cliente com perfil otimizado no Google" class="h-[40px] md:h-[60px] object-contain" loading="lazy">
+                    <img src="/assets/img/logo-cliente-4.webp" alt="Logo de empresa atendida em SEO Local" class="h-[40px] md:h-[60px] object-contain" loading="lazy">
+                    <img src="/assets/img/logo-cliente-5.webp" alt="Logo de cliente com tour virtual no Google" class="h-[40px] md:h-[60px] object-contain" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: BENEFÍCIOS -->
+        <section id="beneficios" class="relative">
+            <!-- Bloco Superior Verde -->
+            <div class="bg-brand-accentlight pt-[7em] pb-[10em] px-4 text-center">
+                <div class="max-w-[800px] mx-auto">
+                    <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Por que otimizar?</span>
+                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-6 font-outfit text-brand-dark">A importância de estar no Google Maps</h2>
+                    <p class="text-[#353738] text-[16px]">
+                        Milhares de pessoas procuram por seus serviços todos os dias. Estar bem posicionado é a diferença entre ser escolhido ou ignorado.
+                    </p>
+                </div>
+            </div>
+            <!-- Bloco Inferior Sobreposto -->
+            <div class="max-w-[1280px] mx-auto px-4 -mt-[6em] mb-[7em] relative z-10">
+                <div class="bg-white rounded-[15px] shadow-[0_0_60px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col md:flex-row">
+                    <div class="w-full md:w-[50%]">
+                        <img src="/assets/img/beneficios-img.png?v=1.1" alt="Benefícios de estar bem posicionado no Google Meu Negócio" class="w-full h-full object-cover min-h-[300px]" loading="lazy">
+                    </div>
+                    <div class="w-full md:w-[50%] p-8 md:p-12 flex flex-col justify-center">
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <div class="bg-brand-accent w-[40px] h-[40px] rounded-full flex items-center justify-center mr-4 shrink-0 mt-1">
+                                    <i class="fas fa-search text-brand-dark"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-[20px] font-semibold mb-1 font-outfit">Visibilidade Direta</h3>
+                                    <p class="text-[#353738] text-[14px]">Apareça para clientes no exato momento em que procuram por você.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-brand-accent w-[40px] h-[40px] rounded-full flex items-center justify-center mr-4 shrink-0 mt-1">
+                                    <i class="fas fa-star text-brand-dark"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-[20px] font-semibold mb-1 font-outfit">Autoridade e Confiança</h3>
+                                    <p class="text-[#353738] text-[14px]">Perfis completos com avaliações geram mais credibilidade.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-brand-accent w-[40px] h-[40px] rounded-full flex items-center justify-center mr-4 shrink-0 mt-1">
+                                    <i class="fas fa-mouse-pointer text-brand-dark"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-[20px] font-semibold mb-1 font-outfit">Aumento de Contatos</h3>
+                                    <p class="text-[#353738] text-[14px]">Mais chamadas, rotas e visitas ao seu site através do Google.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6: SERVIÇOS -->
+        <section id="servicos" class="bg-brand-extralight py-[7em]">
+            <div class="max-w-[1280px] mx-auto px-4">
+                <div class="text-center mb-16">
+                    <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">O Que Fazemos</span>
+                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Nossos Serviços</h2>
+                    <p class="text-[#353738] max-w-[600px] mx-auto">Soluções completas para posicionar sua empresa no topo das buscas locais e encantar seus clientes.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Serviço 1 -->
+                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+                        <img src="/assets/img/servico-1.webp?v=1.1" alt="Serviço de otimização completa de perfil no Google Meu Negócio" class="w-full h-[250px] object-cover" loading="lazy">
+                        <div class="p-8">
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Otimização Completa de Perfil</h3>
+                            <p class="text-[#353738] mb-6">Ajuste de todas as informações, categorias e palavras-chave para o algoritmo do Google.</p>
+                            <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre a Otimização de Perfil" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Serviço 2 -->
+                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+                        <img src="/assets/img/servico-2.png" alt="Serviço de fotos 360 graus profissionais para empresas" class="w-full h-[250px] object-cover" loading="lazy">
+                        <div class="p-8">
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Fotos 360º Profissionais</h3>
+                            <p class="text-[#353738] mb-6">Imagens imersivas que destacam a estrutura e o ambiente da sua empresa no Google Maps.</p>
+                            <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre as Fotos 360º" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Serviço 3 -->
+                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+                        <img src="/assets/img/servico-3.png" alt="Serviço de tour virtual interativo integrado ao Google Maps" class="w-full h-[250px] object-cover" loading="lazy">
+                        <div class="p-8">
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Tour Virtual Interativo</h3>
+                            <p class="text-[#353738] mb-6">Conecte as fotos 360º criando um passeio virtual direto no seu perfil do Google Meu Negócio.</p>
+                            <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre o Tour Virtual" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Serviço 4 -->
+                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+                        <img src="/assets/img/servico-4.webp" alt="Serviço de SEO local estratégico para posicionamento no Google" class="w-full h-[250px] object-cover" loading="lazy">
+                        <div class="p-8">
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">SEO Local Estratégico</h3>
+                            <p class="text-[#353738] mb-6">Estratégias para colocar sua empresa nas primeiras posições quando buscarem pelos seus serviços.</p>
+                            <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre o SEO Local" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Serviço 5 -->
+                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+                        <img src="/assets/img/servico-5.webp" alt="Serviço de gestão de avaliações e reviews no Google" class="w-full h-[250px] object-cover" loading="lazy">
+                        <div class="p-8">
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Gestão de Avaliações</h3>
+                            <p class="text-[#353738] mb-6">Técnicas para obter mais reviews positivos e melhorar a nota da sua empresa no Google.</p>
+                            <a href="https://wa.me/5551998810128" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Serviço 6 -->
+                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+                        <img src="/assets/img/servico-6.webp" alt="Serviço de atualizações e publicações no Google Posts" class="w-full h-[250px] object-cover" loading="lazy">
+                        <div class="p-8">
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Atualizações e Google Posts</h3>
+                            <p class="text-[#353738] mb-6">Manutenção do perfil sempre ativo com novidades, ofertas e postagens relevantes.</p>
+                            <a href="https://wa.me/5551998810128" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 7: COMO FUNCIONA / PROCESSO -->
+        <section id="como-funciona" class="py-[7em] max-w-[1280px] mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Metodologia</span>
+                <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Como funciona nosso trabalho</h2>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between relative">
+                <!-- Linha Conectora (Apenas Desktop) -->
+                <div class="hidden md:block absolute top-[40px] left-[10%] right-[10%] h-[2px] border-t-2 border-dashed border-brand-accent -z-10"></div>
+                
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center w-full md:w-[22%] mb-8 md:mb-0">
+                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <span class="text-brand-green font-bold mb-2 font-outfit">01</span>
+                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Análise de Perfil</h3>
+                    <p class="text-[#353738] text-[14px]">Diagnosticamos como sua empresa está posicionada hoje.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center w-full md:w-[22%] mb-8 md:mb-0">
+                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <span class="text-brand-green font-bold mb-2 font-outfit">02</span>
+                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Otimização Técnica</h3>
+                    <p class="text-[#353738] text-[14px]">Ajustamos todas as informações para as melhores práticas do Google.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center w-full md:w-[22%] mb-8 md:mb-0">
+                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <span class="text-brand-green font-bold mb-2 font-outfit">03</span>
+                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Criação de Conteúdo</h3>
+                    <p class="text-[#353738] text-[14px]">Produção de Fotos 360º e Tour Virtual para enriquecer o perfil.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center w-full md:w-[22%]">
+                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span class="text-brand-green font-bold mb-2 font-outfit">04</span>
+                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Acompanhamento</h3>
+                    <p class="text-[#353738] text-[14px]">Gestão de resultados, novas postagens e respostas às avaliações.</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Iniciar Agora</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 8: MAPA / ÁREA DE ATUAÇÃO (Adaptado de Vídeo Institucional) -->
+        <section id="area-atuacao" class="relative bg-brand-dark text-white py-[7em]">
+            <div class="max-w-[1280px] mx-auto px-4 flex flex-col items-center text-center z-20 relative">
+                <div class="w-[80px] h-[80px] rounded-full bg-white flex items-center justify-center text-brand-green text-3xl mb-8 shadow-[0_0_20px_rgba(255,255,255,0.3)] animate-pulse">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 text-white font-outfit">Onde Estamos e Onde Atendemos</h2>
+                <p class="text-gray-300 max-w-[700px] mb-8 text-[16px]">
+                    Sediados em Estância Velha - RS, realizamos o trabalho de otimização de perfis para empresas de todo o Brasil.
+                    Nossos serviços de fotografia 360º e tour virtual estão disponíveis na nossa região de atuação.
+                </p>
+            </div>
+            
+            <div class="w-full h-[400px] mt-8 grayscale hover:grayscale-0 transition duration-500 relative z-20">
+                <!-- Iframe do Mapa -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x95195e26ec0d979b%3A0xe5a36398b67f1b!2sEst%C3%A2ncia%20Velha%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1714400000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização da Axtra Venture em Estância Velha RS"></iframe>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 9: DIFERENCIAIS (Características) -->
+        <section class="py-[7em] max-w-[1280px] mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Por que nós?</span>
+                <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Nossos Diferenciais</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="flex flex-col items-start">
+                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Especialização Focada</h3>
+                    <p class="text-[#353738]">Somos especialistas exclusivamente em Google Meu Negócio e SEO Local, o que garante maior profundidade e resultado.</p>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Atendimento Estratégico</h3>
+                    <p class="text-[#353738]">Entendemos o seu negócio e criamos uma estratégia personalizada, não usamos fórmulas genéricas.</p>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Qualidade Visual</h3>
+                    <p class="text-[#353738]">Imagens e tours virtuais em alta resolução que destacam seu ambiente e transmitem confiança ao cliente.</p>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Foco em Conversão</h3>
+                    <p class="text-[#353738]">Otimizamos seu perfil não apenas para visitas, mas para gerar ligações, mensagens e rotas de GPS reais.</p>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Suporte Dedicado</h3>
+                    <p class="text-[#353738]">Acompanhamento constante com canal direto no WhatsApp para esclarecer dúvidas e ajustar rotas.</p>
+                </div>
+                <div class="flex flex-col items-start">
+                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Resultados Comprovados</h3>
+                    <p class="text-[#353738]">Metodologia validada que já ajudou diversas empresas a alavancarem suas vendas através do Google.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 10: DEPOIMENTOS -->
+        <section id="depoimentos" class="bg-brand-extralight py-[7em]">
+            <div class="max-w-[1280px] mx-auto px-4">
+                <div class="text-center mb-16">
+                    <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Prova Social</span>
+                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">O que dizem nossos clientes</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Depoimento 1 -->
+                    <div class="bg-white p-8 rounded-[15px] shadow-sm relative">
+                        <div class="text-[#FBBF24] mb-4 text-xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[#353738] italic mb-6">"Desde que a Axtra Venture otimizou nosso perfil, as ligações de clientes novos aumentaram muito. O tour virtual ficou incrível e passa muita credibilidade!"</p>
+                        <div class="flex items-center">
+                            <img src="/assets/img/avatar-1.webp" alt="Foto de João Paulo, cliente da Axtra Venture" class="w-[50px] h-[50px] rounded-full mr-4 object-cover" loading="lazy">
+                            <div>
+                                <p class="font-semibold text-brand-dark text-[16px] font-outfit">João Paulo</p>
+                                <span class="text-[14px] text-[#7D8D87]">Clínica Odontológica</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="bg-white p-8 rounded-[15px] shadow-sm relative">
+                        <div class="text-[#FBBF24] mb-4 text-xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[#353738] italic mb-6">"Não sabíamos a importância do Google Meu Negócio até conhecermos o trabalho deles. Hoje somos a primeira opção nas buscas do nosso bairro."</p>
+                        <div class="flex items-center">
+                            <img src="/assets/img/avatar-2.webp" alt="Foto de Mariana Silva, cliente da Axtra Venture" class="w-[50px] h-[50px] rounded-full mr-4 object-cover" loading="lazy">
+                            <div>
+                                <p class="font-semibold text-brand-dark text-[16px] font-outfit">Mariana Silva</p>
+                                <span class="text-[14px] text-[#7D8D87]">Estúdio de Pilates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Depoimento 3 -->
+                    <div class="bg-white p-8 rounded-[15px] shadow-sm relative">
+                        <div class="text-[#FBBF24] mb-4 text-xl">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-[#353738] italic mb-6">"As fotos 360 chamam muita atenção. A equipe é super profissional, rápida e nos deu todo o suporte necessário. Recomendo muito!"</p>
+                        <div class="flex items-center">
+                            <img src="/assets/img/avatar-3.webp" alt="Foto de Carlos Eduardo, cliente da Axtra Venture" class="w-[50px] h-[50px] rounded-full mr-4 object-cover" loading="lazy">
+                            <div>
+                                <p class="font-semibold text-brand-dark text-[16px] font-outfit">Carlos Eduardo</p>
+                                <span class="text-[14px] text-[#7D8D87]">Restaurante Local</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FAQ (Alpine Accordion) -->
+        <section id="faq" class="py-[7em] max-w-[800px] mx-auto px-4" x-data="{ selected: null }">
+            <div class="text-center mb-12">
+                <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Dúvidas Comuns</span>
+                <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Perguntas Frequentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
+                    <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
+                        Quanto tempo leva para ver resultados?
+                        <i class="fas transition-transform duration-300" :class="selected === 1 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="selected === 1" x-collapse class="px-6 pb-5 text-[#353738]">
+                        Geralmente, as melhorias começam a ser notadas nas primeiras semanas após a otimização completa do perfil, com crescimento contínuo ao longo dos meses.
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
+                    <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
+                        Preciso ter um site para estar no Google Meu Negócio?
+                        <i class="fas transition-transform duration-300" :class="selected === 2 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="selected === 2" x-collapse class="px-6 pb-5 text-[#353738]">
+                        Não, o Google Meu Negócio funciona de forma independente. Porém, ter um site aumenta ainda mais sua autoridade e opções de conversão.
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
+                    <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
+                        Vocês atendem empresas fora do Rio Grande do Sul?
+                        <i class="fas transition-transform duration-300" :class="selected === 3 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="selected === 3" x-collapse class="px-6 pb-5 text-[#353738]">
+                        Sim! Nossos serviços de otimização de perfil, gestão e SEO Local podem ser realizados para empresas de qualquer lugar do Brasil.
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
+                    <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
+                        Como funciona as Fotos 360 e o Tour Virtual?
+                        <i class="fas transition-transform duration-300" :class="selected === 4 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="selected === 4" x-collapse class="px-6 pb-5 text-[#353738]">
+                        Utilizamos equipamentos específicos para captar imagens imersivas de todos os ângulos do seu ambiente. Depois, conectamos essas fotos diretamente no Google Maps.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 11: CTA FINAL / BANNER -->
+        <section id="contato" class="relative bg-brand-green py-[7em] text-center px-4 overflow-hidden">
+            <div class="absolute inset-0 z-0 bg-[url('/assets/img/cta-bg.webp')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+            <div class="relative z-10 max-w-[800px] mx-auto">
+                <h2 class="text-[32px] md:text-[44px] font-bold mb-6 text-white leading-tight font-outfit">Pronto para dominar as buscas locais?</h2>
+                <p class="text-white text-[18px] mb-10 opacity-90">Não deixe seus clientes encontrarem a concorrência antes de você. Clique no botão abaixo e fale com um de nossos especialistas.</p>
+                <a href="https://wa.me/5551998810128" target="_blank" class="btn-secondary text-[16px] px-8 py-4">Chamar no WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Faixa Principal -->
+        <div class="bg-brand-nav py-[4em] md:py-[6em]">
+            <div class="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row gap-12 justify-between">
+                
+                <!-- Coluna 1: Logo e Social -->
+                <div class="w-full md:w-[35%]">
+                    <img src="/assets/img/logo-principal.png?v=1.1" alt="Logo Axtra Venture - Especialista em Google Meu Negócio" class="h-[49px] w-auto mb-6" loading="lazy">
+                    <p class="text-[#353738] text-[14px] mb-6 max-w-[300px]">
+                        Axtra Venture é especialista em colocar empresas no topo do Google Meu Negócio, através de SEO Local estratégico e fotografia profissional.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="https://facebook.com/axtraventure" target="_blank" aria-label="Facebook" class="w-[35px] h-[35px] rounded-full bg-gray-200 flex items-center justify-center text-brand-green hover:bg-brand-hover hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/axtraventure" target="_blank" aria-label="Instagram" class="w-[35px] h-[35px] rounded-full bg-gray-200 flex items-center justify-center text-brand-green hover:bg-brand-hover hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links Rapidos -->
+                <div class="w-full md:w-[20%]">
+                    <h3 class="font-outfit font-semibold text-[20px] mb-6 text-brand-dark">Navegação</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#hero" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Início</a></li>
+                        <li><a href="#sobre" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Serviços</a></li>
+                        <li><a href="#como-funciona" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Como Funciona</a></li>
+                        <li><a href="#faq" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Contato -->
+                <div class="w-full md:w-[45%]">
+                    <h3 class="font-outfit font-semibold text-[20px] mb-6 text-brand-dark">Entre em Contato</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-brand-green text-[20px] mt-1 mr-4 w-[20px] text-center"></i>
+                            <span class="text-[#353738] text-[14px]">Rua Machado de Assis 320, Centro, Estância Velha - RS<br>CEP 93600-450, Galeria Nordio</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp text-brand-green text-[20px] mr-4 w-[20px] text-center"></i>
+                            <a href="https://wa.me/5551998810128" target="_blank" class="text-[#353738] text-[14px] hover:text-brand-hover transition">+55 (51) 99881-0128</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="far fa-clock text-brand-green text-[20px] mr-4 w-[20px] text-center"></i>
+                            <span class="text-[#353738] text-[14px]">Segunda a Sexta das 09:00 às 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Faixa Copyright -->
+        <div class="bg-brand-accent py-4 border-t border-brand-accentlight">
+            <div class="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center">
+                <div class="text-[#1F2122] text-[13px] font-inter">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Axtra Venture. Todos os direitos reservados.
+                </div>
+                <div class="text-[#1F2122] text-[13px] font-inter mt-2 md:mt-0 font-medium">
+                    Desenvolvido por OFS Digital
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551998810128" target="_blank" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="/assets/js/script.js?v=1.0"></script>
+</body>
+</html>

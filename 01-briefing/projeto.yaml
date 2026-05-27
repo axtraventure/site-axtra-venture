@@ -1,0 +1,68 @@
+empresa:
+  nome: "Axtra Venture"
+  segmento: "Especialista em Google Meu Negócio"
+  cidade: "Estância Velha"
+  estado: "RS"
+  pais: "BR"
+  telefone: "5551998810128"
+  whatsapp: "5551998810128"
+  endereco: "Rua Machado de Assis 320, Centro, Estância Velha - RS, CEP 93600-450, Galeria Nordio"
+  horario: "Segunda a Sexta das 09:00 às 18:00"
+  bairros_atendidos: "Todo Brasil"
+  google_maps_iframe: ""
+
+logo_path: "/assets/img/logo.png"
+
+redes_sociais:
+  instagram: "@axtraventure"
+  facebook: "@axtraventure"
+
+branding:
+  tom: "Profissional, moderno e estratégico, com linguagem clara e humanizada"
+  paleta:
+    primaria: ""
+    secundaria: ""
+    fundo: "#F9FAFB"
+    texto: "#111827"
+
+seo:
+  palavra_chave_principal: "Google Meu Negócio"
+  palavras_secundarias:
+    - "Posicionamento no Google Meu Negócio"
+    - "SEO Local"
+    - "Fotos 360 para empresas"
+    - "Tour Virtual Google"
+    - "Google Maps para empresas"
+    - "Marketing Local"
+  area_atuacao: "Todo Brasil"
+
+servicos:
+  - nome: "Posicionamento no Google Meu Negócio"
+    descricao: "Estratégias completas para aumentar a visibilidade da empresa nas pesquisas locais do Google."
+    slug: "posicionamento-google-meu-negocio"
+
+  - nome: "Fotos 360º"
+    descricao: "Produção de fotos 360º profissionais para destacar a empresa no Google e transmitir mais credibilidade."
+    slug: "fotos-360"
+
+  - nome: "Tour Virtual"
+    descricao: "Tour virtual integrado ao Google para melhorar a experiência do cliente e aumentar a confiança no negócio."
+    slug: "tour-virtual-google"
+
+diferenciais:
+  - "Especialização focada exclusivamente em Google Meu Negócio"
+  - "Estratégias voltadas para aumentar a visibilidade local"
+  - "Fotos 360º e tour virtual com foco em profissionalismo e confiança"
+  - "Atendimento personalizado para cada negócio"
+  - "Foco em gerar mais oportunidades através das pesquisas no Google"
+
+prova_social:
+  - "Feedbacks positivos de clientes"
+  - "Resultados reais através do Google"
+  - "Empresas atendidas na região"
+
+cta_principal: "Falar no WhatsApp"
+
+dominio: ""
+
+tipo_site: "one-page"

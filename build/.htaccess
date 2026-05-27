@@ -1,0 +1,52 @@
+# 1) Force HTTPS & 2) Redirect www to non-www
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect www to non-www (301)
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # Force HTTPS (301)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# 3) Página 404: ErrorDocument 404 /index.html
+ErrorDocument 404 /index.html
+
+# 4) Compressão gzip (HTML, CSS, JS, SVG, JSON)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# 5) Cache de navegador
+<IfModule mod_expires.c>
+  ExpiresEngine On
+  ExpiresDefault "access plus 0 seconds"
+
+  # HTML: no-cache
+  ExpiresByType text/html "access plus 0 seconds"
+
+  # CSS/JS: 1 dia (86400 seconds)
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType text/javascript "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType application/x-javascript "access plus 1 day"
+
+  # Imagens: 1 mês (2592000 seconds)
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+</IfModule>
+
+# HTML Cache Control headers (must-revalidate, no-cache)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
