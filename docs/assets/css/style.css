@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, .font-outfit {
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+}
+
+.text-brand-green { color: #84c77e; }
+.bg-brand-green { background-color: #84c77e; }
+.hover\:bg-brand-hover:hover { background-color: #6ebc68; }
+.border-brand-green { border-color: #84c77e; }
+
+.bg-accent { background-color: #84c77e; }
+.text-accent { color: #84c77e; }
+.bg-accent-light { background-color: #e2f4e0; }
+
+/* Custom Button */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #84c77e;
+    color: #000000;
+    border: 1px solid #84c77e;
+    border-radius: 21px;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #FFFFFF;
+    border-radius: 21px;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #84c77e;
+    border-color: #84c77e;
+    color: #000000;
+}
+
+/* Floating WhatsApp */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Slideshow animation (Ken Burns effect) */
+@keyframes kenburns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+.ken-burns-bg {
+    animation: kenburns 20s infinite alternate linear;
+}
