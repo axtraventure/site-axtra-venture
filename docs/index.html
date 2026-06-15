@@ -125,7 +125,7 @@
             },
             {
               "@type": "Question",
-              "name": "Preciso ter um site para estar no Google Meu Negócio?",
+              "name": "Preciso ter um site para usar o Google Meu Negócio?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Não, o Google Meu Negócio funciona de forma independente. Porém, ter um site aumenta ainda mais sua autoridade e opções de conversão."
@@ -133,18 +133,26 @@
             },
             {
               "@type": "Question",
-              "name": "Vocês atendem empresas fora do Rio Grande do Sul?",
+              "name": "Vocês atendem em todo o Brasil?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sim! Nossos serviços de otimização de perfil, gestão e SEO Local podem ser realizados para empresas de qualquer lugar do Brasil."
+                "text": "Nossos serviços de otimização de perfil e SEO Local podem ser realizados para empresas de qualquer região do Brasil. Já as Fotos 360° e o Tour Virtual são oferecidos presencialmente em nossa região de atendimento."
               }
             },
             {
               "@type": "Question",
-              "name": "Como funcionam as Fotos 360 e o Tour Virtual?",
+              "name": "O Google Meu Negócio é gratuito?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Utilizamos equipamentos específicos para captar imagens imersivas de todos os ângulos do seu ambiente. Depois, conectamos essas fotos diretamente no Google Maps."
+                "text": "Sim. O Perfil da Empresa no Google é uma ferramenta gratuita. Nosso trabalho consiste em otimizar, estruturar e desenvolver estratégias para que sua empresa tenha mais visibilidade, autoridade e melhores resultados nas pesquisas do Google."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como as Fotos 360° e o Tour Virtual ajudam minha empresa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "As Fotos 360° e o Tour Virtual permitem que seus clientes conheçam sua empresa antes mesmo da visita. Essa experiência aumenta a confiança, valoriza seu negócio e fortalece sua presença no Google, contribuindo para uma melhor experiência do usuário."
               }
             }
           ]
@@ -152,8 +160,8 @@
         {
           "@type": "Service",
           "@id": "https://www.axtraventure.com.br/#service1",
-          "name": "Posicionamento no Google Meu Negócio",
-          "description": "Estratégias completas para aumentar a visibilidade da empresa nas pesquisas locais do Google.",
+          "name": "Google Meu Negócio",
+          "description": "Otimizamos o Perfil da Empresa no Google para aumentar a visibilidade da sua empresa nas pesquisas locais, fortalecer sua presença online e atrair mais clientes.",
           "provider": {
             "@id": "https://www.axtraventure.com.br/#organization"
           },
@@ -165,8 +173,8 @@
         {
           "@type": "Service",
           "@id": "https://www.axtraventure.com.br/#service2",
-          "name": "Fotos 360º",
-          "description": "Produção de fotos 360º profissionais para destacar a empresa no Google e transmitir mais credibilidade.",
+          "name": "SEO Local",
+          "description": "Desenvolvemos estratégias de SEO Local para melhorar o posicionamento da sua empresa nas buscas, conectando seu negócio às pessoas que realmente procuram pelos seus produtos ou serviços.",
           "provider": {
             "@id": "https://www.axtraventure.com.br/#organization"
           },
@@ -178,8 +186,8 @@
         {
           "@type": "Service",
           "@id": "https://www.axtraventure.com.br/#service3",
-          "name": "Tour Virtual",
-          "description": "Tour virtual integrado ao Google para melhorar a experiência do cliente e aumentar a confiança no negócio.",
+          "name": "Criação de Sites",
+          "description": "Desenvolvemos sites modernos, rápidos e responsivos, projetados para fortalecer sua presença digital, transmitir credibilidade e gerar novas oportunidades de negócio.",
           "provider": {
             "@id": "https://www.axtraventure.com.br/#organization"
           },
@@ -191,8 +199,8 @@
         {
           "@type": "Service",
           "@id": "https://www.axtraventure.com.br/#service4",
-          "name": "SEO Local Estratégico",
-          "description": "Estratégias para colocar sua empresa nas primeiras posições quando buscarem pelos seus serviços.",
+          "name": "Fotos 360°",
+          "description": "Produzimos fotos 360° de alta qualidade que valorizam seu ambiente, transmitem mais confiança e oferecem uma experiência imersiva aos seus clientes.",
           "provider": {
             "@id": "https://www.axtraventure.com.br/#organization"
           },
@@ -204,21 +212,8 @@
         {
           "@type": "Service",
           "@id": "https://www.axtraventure.com.br/#service5",
-          "name": "Gestão de Avaliações",
-          "description": "Técnicas para obter mais reviews positivos e melhorar a nota da sua empresa no Google.",
-          "provider": {
-            "@id": "https://www.axtraventure.com.br/#organization"
-          },
-          "areaServed": {
-            "@type": "Country",
-            "name": "Brasil"
-          }
-        },
-        {
-          "@type": "Service",
-          "@id": "https://www.axtraventure.com.br/#service6",
-          "name": "Atualizações e Google Posts",
-          "description": "Manutenção do perfil sempre ativo com novidades, ofertas e postagens relevantes.",
+          "name": "Tour Virtual",
+          "description": "Criamos tours virtuais interativos que permitem aos clientes conhecerem sua empresa antes mesmo da visita, fortalecendo sua presença digital e destacando seu negócio.",
           "provider": {
             "@id": "https://www.axtraventure.com.br/#organization"
           },
@@ -276,7 +271,6 @@
                     <a href="#hero" class="hover:text-brand-hover transition">Início</a>
                     <a href="#sobre" class="hover:text-brand-hover transition">Sobre</a>
                     <a href="#servicos" class="hover:text-brand-hover transition">Serviços</a>
-                    <a href="#como-funciona" class="hover:text-brand-hover transition">Como Funciona</a>
                     <a href="#faq" class="hover:text-brand-hover transition">FAQ</a>
                 </nav>
 
@@ -300,7 +294,6 @@
                 <a href="#hero" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Início</a>
                 <a href="#sobre" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Sobre</a>
                 <a href="#servicos" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Serviços</a>
-                <a href="#como-funciona" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">Como Funciona</a>
                 <a href="#faq" @click="mobileMenuOpen = false" class="px-6 py-3 border-b border-[#7D8D87] hover:bg-brand-hover">FAQ</a>
                 <a href="https://wa.me/5551998810128" @click="mobileMenuOpen = false" class="px-6 py-4 mt-2 text-center bg-white text-brand-green mx-4 rounded-[21px]">Fale Conosco</a>
             </nav>
@@ -323,11 +316,10 @@
             <div class="relative z-20 max-w-[1280px] mx-auto px-4 md:px-8">
                 <div class="w-full md:w-[65%] lg:w-[50%]">
                     <h1 class="text-white text-[32px] md:text-[44px] lg:text-[61px] font-bold font-outfit leading-[1.1] tracking-[-1px] mb-6 drop-shadow-md">
-                        Especialista em Google Meu Negócio em Estância Velha RS
+                        Especialista em Google Meu Negócio e SEO Local
                     </h1>
                     <p class="text-white text-[16px] mb-8 drop-shadow-sm font-inter">
-                        A Axtra Venture ajuda empresas a melhorarem seu posicionamento no Google Meu Negócio, aumentando a presença no Google Maps e nas pesquisas locais.
-                        Com estratégias de SEO Local, fotos 360º e tour virtual, sua empresa ganha mais credibilidade e oportunidades de negócio.
+                        A Axtra Venture ajuda empresas a conquistarem mais visibilidade no Google por meio da otimização do Google Meu Negócio e estratégias de SEO Local. Além disso, desenvolvemos sites profissionais, fotos 360° e Tour Virtual para fortalecer a presença digital da sua empresa, transmitir mais credibilidade e atrair novos clientes.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start justify-center sm:justify-start">
                         <a href="https://wa.me/5551998810128" target="_blank" class="btn-secondary">Falar no WhatsApp</a>
@@ -369,19 +361,19 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
                         <div class="flex items-start">
                             <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
-                            <p class="font-inter text-[#353738] font-medium">Especialização focada em Google Meu Negócio</p>
+                            <p class="font-inter text-[#353738] font-medium">Especialistas em Google Meu Negócio</p>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
-                            <p class="font-inter text-[#353738] font-medium">Estratégias voltadas para SEO Local</p>
+                            <p class="font-inter text-[#353738] font-medium">Criação de Sites Profissionais</p>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
-                            <p class="font-inter text-[#353738] font-medium">Atendimento personalizado para empresas</p>
+                            <p class="font-inter text-[#353738] font-medium">SEO Local para Empresas</p>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-check-circle text-brand-green text-xl mt-1 mr-3"></i>
-                            <p class="font-inter text-[#353738] font-medium">Presença digital focada em resultados reais</p>
+                            <p class="font-inter text-[#353738] font-medium">Estratégias voltadas para resultados</p>
                         </div>
                     </div>
                 </div>
@@ -395,13 +387,13 @@
                 <div class="w-full md:w-[45%]">
                     <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Quem Somos</span>
                     <h2 class="text-[30px] md:text-[39px] font-semibold mb-6 leading-tight font-outfit text-brand-dark">
-                        Especialistas em Google Meu Negócio e SEO Local em Estância Velha
+                        Especialistas em Google Meu Negócio e SEO Local
                     </h2>
                     <p class="text-[#353738] mb-6">
-                        A Axtra Venture é especializada em estratégias de posicionamento no Google, ajudando empresas a se destacarem nas buscas locais e no Google Maps. Nosso objetivo é conectar o seu negócio com clientes que já estão procurando pelo que você oferece.
+                        A Axtra Venture é especializada em estratégias de posicionamento no Google, ajudando empresas a se destacarem nas buscas locais e no Google Maps. Nosso objetivo é conectar o seu negócio aos clientes que já estão procurando pelos produtos ou serviços que você oferece.
                     </p>
                     <p class="text-[#353738] mb-8">
-                        Com soluções completas, desde a otimização de perfis até fotos 360º e tours virtuais, entregamos resultados que fazem a diferença na autoridade e visibilidade digital da sua marca.
+                        Com soluções completas, desde a otimização de perfis até fotos 360° e tours virtuais, entregamos resultados que fortalecem a autoridade da sua marca e ampliam sua visibilidade digital.
                     </p>
                     <div class="h-[1px] bg-[#DCDCDE] w-full mb-8"></div>
                     <div class="flex justify-center md:justify-start">
@@ -438,10 +430,10 @@
             <!-- Bloco Superior Verde -->
             <div class="bg-brand-accentlight pt-[7em] pb-[10em] px-4 text-center">
                 <div class="max-w-[800px] mx-auto">
-                    <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Por que otimizar?</span>
-                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-6 font-outfit text-brand-dark">A importância de estar no Google Maps</h2>
+                    <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">POR QUE INVESTIR NO GOOGLE MEU NEGÓCIO?</span>
+                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-6 font-outfit text-brand-dark">A importância de estar no Google</h2>
                     <p class="text-[#353738] text-[16px]">
-                        Milhares de pessoas procuram por seus serviços todos os dias. Estar bem posicionado é a diferença entre ser escolhido ou ignorado.
+                        Milhares de pessoas pesquisam por produtos e serviços todos os dias. Estar bem posicionado no Google pode ser a diferença entre conquistar um novo cliente ou ser ignorado.
                     </p>
                 </div>
             </div>
@@ -477,12 +469,12 @@
                                 </div>
                                 <div>
                                     <h3 class="text-[20px] font-semibold mb-1 font-outfit">Aumento de Contatos</h3>
-                                    <p class="text-[#353738] text-[14px]">Mais chamadas, rotas e visitas ao seu site através do Google.</p>
+                                    <p class="text-[#353738] text-[14px]">Transforme pesquisas em contatos reais com mais ligações, rotas e acessos ao seu site.</p>
                                 </div>
                             </li>
                         </ul>
                         <div class="mt-8 flex justify-center md:justify-start">
-                            <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Saber Mais</a>
+                            <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Falar com um especialista</a>
                         </div>
                     </div>
                 </div>
@@ -494,131 +486,72 @@
             <div class="max-w-[1280px] mx-auto px-4">
                 <div class="text-center mb-16">
                     <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">O Que Fazemos</span>
-                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Nossos Serviços</h2>
-                    <p class="text-[#353738] max-w-[600px] mx-auto">Soluções completas para posicionar sua empresa no topo das buscas locais e encantar seus clientes.</p>
+                    <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Conheça nossas soluções</h2>
+                    <p class="text-[#353738] max-w-[600px] mx-auto">Oferecemos soluções estratégicas para aumentar a visibilidade da sua empresa no Google, fortalecer sua marca e atrair mais clientes.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Serviço 1 -->
+                    <!-- Serviço 1: Google Meu Negócio -->
                     <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-                        <img src="assets/img/servico-1.webp?v=1.1" alt="Serviço de otimização completa de perfil no Google Meu Negócio" class="w-full h-[250px] object-cover" loading="lazy">
+                        <img src="assets/img/servico-1.webp?v=1.1" alt="Serviço de Google Meu Negócio" class="w-full h-[250px] object-cover" loading="lazy">
                         <div class="p-8">
-                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Otimização Completa de Perfil</h3>
-                            <p class="text-[#353738] mb-6">Ajuste de todas as informações, categorias e palavras-chave para o algoritmo do Google.</p>
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Google Meu Negócio</h3>
+                            <p class="text-[#353738] mb-6">Otimizamos o Perfil da Empresa no Google para aumentar a visibilidade da sua empresa nas pesquisas locais, fortalecer sua presença online e atrair mais clientes.</p>
                             <div class="flex justify-center md:justify-start">
-                                <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre a Otimização de Perfil" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                                <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre o Google Meu Negócio" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
                             </div>
                         </div>
                     </div>
-                    <!-- Serviço 2 -->
+                    <!-- Serviço 2: SEO Local -->
                     <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-                        <img src="assets/img/servico-2.webp?v=1.1" alt="Serviço de fotos 360 graus profissionais para empresas" class="w-full h-[250px] object-cover" loading="lazy">
+                        <img src="assets/img/servico-4.webp?v=1.1" alt="Serviço de SEO Local" class="w-full h-[250px] object-cover" loading="lazy">
                         <div class="p-8">
-                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Fotos 360º Profissionais</h3>
-                            <p class="text-[#353738] mb-6">Imagens imersivas que destacam a estrutura e o ambiente da sua empresa no Google Maps.</p>
-                            <div class="flex justify-center md:justify-start">
-                                <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre as Fotos 360º" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Serviço 3 -->
-                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-                        <img src="assets/img/servico-3.png" alt="Serviço de tour virtual interativo integrado ao Google Maps" class="w-full h-[250px] object-cover" loading="lazy">
-                        <div class="p-8">
-                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Tour Virtual Interativo</h3>
-                            <p class="text-[#353738] mb-6">Conecte as fotos 360º criando um passeio virtual direto no seu perfil do Google Meu Negócio.</p>
-                            <div class="flex justify-center md:justify-start">
-                                <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre o Tour Virtual" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Serviço 4 -->
-                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-                        <img src="assets/img/servico-4.webp?v=1.1" alt="Serviço de SEO local estratégico para posicionamento no Google" class="w-full h-[250px] object-cover" loading="lazy">
-                        <div class="p-8">
-                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">SEO Local Estratégico</h3>
-                            <p class="text-[#353738] mb-6">Estratégias para colocar sua empresa nas primeiras posições quando buscarem pelos seus serviços.</p>
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">SEO Local</h3>
+                            <p class="text-[#353738] mb-6">Desenvolvemos estratégias de SEO Local para melhorar o posicionamento da sua empresa nas buscas, conectando seu negócio às pessoas que realmente procuram pelos seus produtos ou serviços.</p>
                             <div class="flex justify-center md:justify-start">
                                 <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre o SEO Local" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
                             </div>
                         </div>
                     </div>
-                    <!-- Serviço 5 -->
+                    <!-- Serviço 3: Criação de Sites -->
                     <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-                        <img src="assets/img/servico-5.webp?v=1.1" alt="Serviço de gestão de avaliações e reviews no Google" class="w-full h-[250px] object-cover" loading="lazy">
+                        <img src="assets/img/servico-6.webp?v=1.1" alt="Serviço de Criação de Sites" class="w-full h-[250px] object-cover" loading="lazy">
                         <div class="p-8">
-                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Gestão de Avaliações</h3>
-                            <p class="text-[#353738] mb-6">Técnicas para obter mais reviews positivos e melhorar a nota da sua empresa no Google.</p>
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Criação de Sites</h3>
+                            <p class="text-[#353738] mb-6">Desenvolvemos sites modernos, rápidos e responsivos, projetados para fortalecer sua presença digital, transmitir credibilidade e gerar novas oportunidades de negócio.</p>
                             <div class="flex justify-center md:justify-start">
-                                <a href="https://wa.me/5551998810128" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                                <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre a Criação de Sites" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
                             </div>
                         </div>
                     </div>
-                    <!-- Serviço 6 -->
+                    <!-- Serviço 4: Fotos 360° -->
                     <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-                        <img src="assets/img/servico-6.webp?v=1.1" alt="Serviço de atualizações e publicações no Google Posts" class="w-full h-[250px] object-cover" loading="lazy">
+                        <img src="assets/img/servico-2.webp?v=1.1" alt="Serviço de Fotos 360°" class="w-full h-[250px] object-cover" loading="lazy">
                         <div class="p-8">
-                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Atualizações e Google Posts</h3>
-                            <p class="text-[#353738] mb-6">Manutenção do perfil sempre ativo com novidades, ofertas e postagens relevantes.</p>
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Fotos 360°</h3>
+                            <p class="text-[#353738] mb-6">Produzimos fotos 360° de alta qualidade que valorizam seu ambiente, transmitem mais confiança e oferecem uma experiência imersiva aos seus clientes.</p>
                             <div class="flex justify-center md:justify-start">
-                                <a href="https://wa.me/5551998810128" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                                <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre as Fotos 360°" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Serviço 5: Tour Virtual -->
+                    <div class="bg-white rounded-[15px] shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+                        <img src="assets/img/servico-3.png" alt="Serviço de Tour Virtual" class="w-full h-[250px] object-cover" loading="lazy">
+                        <div class="p-8">
+                            <h3 class="text-[24px] font-semibold mb-3 font-outfit">Tour Virtual</h3>
+                            <p class="text-[#353738] mb-6">Criamos tours virtuais interativos que permitem aos clientes conhecerem sua empresa antes mesmo da visita, fortalecendo sua presença digital e destacando seu negócio.</p>
+                            <div class="flex justify-center md:justify-start">
+                                <a href="https://wa.me/5551998810128?text=Olá, gostaria de saber mais sobre o Tour Virtual" target="_blank" class="text-brand-green font-semibold uppercase tracking-wider text-[13px] hover:text-brand-hover">Saber mais <i class="fas fa-arrow-right ml-1"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- SEÇÃO 7: COMO FUNCIONA / PROCESSO -->
-        <section id="como-funciona" class="py-[7em] max-w-[1280px] mx-auto px-4">
-            <div class="text-center mb-16">
-                <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Metodologia</span>
-                <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Como funciona nosso trabalho</h2>
-            </div>
-            
-            <div class="flex flex-col md:flex-row justify-between relative">
-                <!-- Linha Conectora (Apenas Desktop) -->
-                <div class="hidden md:block absolute top-[40px] left-[10%] right-[10%] h-[2px] border-t-2 border-dashed border-brand-accent -z-10"></div>
-                
-                <!-- Step 1 -->
-                <div class="flex flex-col items-center text-center w-full md:w-[22%] mb-8 md:mb-0">
-                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                    <span class="text-brand-green font-bold mb-2 font-outfit">01</span>
-                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Análise de Perfil</h3>
-                    <p class="text-[#353738] text-[14px]">Diagnosticamos como sua empresa está posicionada hoje.</p>
+                <!-- Botão ao final da seção -->
+                <div class="mt-12 flex justify-center">
+                    <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Falar com um especialista</a>
                 </div>
-                <!-- Step 2 -->
-                <div class="flex flex-col items-center text-center w-full md:w-[22%] mb-8 md:mb-0">
-                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
-                        <i class="fas fa-sliders-h"></i>
-                    </div>
-                    <span class="text-brand-green font-bold mb-2 font-outfit">02</span>
-                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Otimização Técnica</h3>
-                    <p class="text-[#353738] text-[14px]">Ajustamos todas as informações para as melhores práticas do Google.</p>
-                </div>
-                <!-- Step 3 -->
-                <div class="flex flex-col items-center text-center w-full md:w-[22%] mb-8 md:mb-0">
-                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <span class="text-brand-green font-bold mb-2 font-outfit">03</span>
-                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Criação de Conteúdo</h3>
-                    <p class="text-[#353738] text-[14px]">Produção de Fotos 360º e Tour Virtual para enriquecer o perfil.</p>
-                </div>
-                <!-- Step 4 -->
-                <div class="flex flex-col items-center text-center w-full md:w-[22%]">
-                    <div class="w-[80px] h-[80px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-3xl mb-6 shadow-md">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <span class="text-brand-green font-bold mb-2 font-outfit">04</span>
-                    <h3 class="text-[20px] font-semibold mb-2 font-outfit">Acompanhamento</h3>
-                    <p class="text-[#353738] text-[14px]">Gestão de resultados, novas postagens e respostas às avaliações.</p>
-                </div>
-            </div>
-            <div class="mt-16 text-center">
-                <a href="https://wa.me/5551998810128" target="_blank" class="btn-primary">Iniciar Agora</a>
             </div>
         </section>
 
@@ -630,62 +563,8 @@
                 </div>
                 <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 text-white font-outfit">Onde Estamos e Onde Atendemos</h2>
                 <p class="text-gray-300 max-w-[700px] text-[16px] font-inter">
-                    Sediados em Estância Velha - RS, realizamos o trabalho de otimização de perfis para empresas de todo o Brasil.
-                    Nossos serviços de fotografia 360º e tour virtual estão disponíveis na nossa região de atuação.
+                    Nossa sede está em Estância Velha, no Rio Grande do Sul, mas atendemos empresas de todo o Brasil com soluções digitais.<br><br>Os serviços de Fotos 360° e Tour Virtual são realizados presencialmente em nossa região de atendimento.
                 </p>
-            </div>
-        </section>
-
-        <!-- SEÇÃO 9: DIFERENCIAIS (Características) -->
-        <section class="py-[7em] max-w-[1280px] mx-auto px-4">
-            <div class="text-center mb-16">
-                <span class="block text-brand-green text-[14px] font-bold uppercase tracking-[2px] mb-2 font-outfit">Por que nós?</span>
-                <h2 class="text-[30px] md:text-[39px] font-semibold mb-4 font-outfit text-brand-dark">Nossos Diferenciais</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="flex flex-col items-start">
-                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Especialização Focada</h3>
-                    <p class="text-[#353738]">Somos especialistas exclusivamente em Google Meu Negócio e SEO Local, o que garante maior profundidade e resultado.</p>
-                </div>
-                <div class="flex flex-col items-start">
-                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Atendimento Estratégico</h3>
-                    <p class="text-[#353738]">Entendemos o seu negócio e criamos uma estratégia personalizada, não usamos fórmulas genéricas.</p>
-                </div>
-                <div class="flex flex-col items-start">
-                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
-                        <i class="fas fa-images"></i>
-                    </div>
-                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Qualidade Visual</h3>
-                    <p class="text-[#353738]">Imagens e tours virtuais em alta resolução que destacam seu ambiente e transmitem confiança ao cliente.</p>
-                </div>
-                <div class="flex flex-col items-start">
-                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Foco em Conversão</h3>
-                    <p class="text-[#353738]">Otimizamos seu perfil não apenas para visitas, mas para gerar ligações, mensagens e rotas de GPS reais.</p>
-                </div>
-                <div class="flex flex-col items-start">
-                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Suporte Dedicado</h3>
-                    <p class="text-[#353738]">Acompanhamento constante com canal direto no WhatsApp para esclarecer dúvidas e ajustar rotas.</p>
-                </div>
-                <div class="flex flex-col items-start">
-                    <div class="w-[60px] h-[60px] rounded-full bg-brand-accent flex items-center justify-center text-brand-dark text-2xl mb-4">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3 class="text-[20px] font-semibold mb-3 font-outfit text-brand-dark">Resultados Comprovados</h3>
-                    <p class="text-[#353738]">Metodologia validada que já ajudou diversas empresas a alavancarem suas vendas através do Google.</p>
-                </div>
             </div>
         </section>
 
@@ -765,7 +644,7 @@
                 <!-- Item 2 -->
                 <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
                     <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
-                        Preciso ter um site para estar no Google Meu Negócio?
+                        Preciso ter um site para usar o Google Meu Negócio?
                         <i class="fas transition-transform duration-300" :class="selected === 2 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
                     </button>
                     <div x-show="selected === 2" x-collapse class="px-6 pb-5 text-[#353738]">
@@ -775,21 +654,31 @@
                 <!-- Item 3 -->
                 <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
                     <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
-                        Vocês atendem empresas fora do Rio Grande do Sul?
+                        Vocês atendem em todo o Brasil?
                         <i class="fas transition-transform duration-300" :class="selected === 3 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
                     </button>
                     <div x-show="selected === 3" x-collapse class="px-6 pb-5 text-[#353738]">
-                        Sim! Nossos serviços de otimização de perfil, gestão e SEO Local podem ser realizados para empresas de qualquer lugar do Brasil.
+                        Nossos serviços de otimização de perfil e SEO Local podem ser realizados para empresas de qualquer região do Brasil. Já as Fotos 360° e o Tour Virtual são oferecidos presencialmente em nossa região de atendimento.
                     </div>
                 </div>
                 <!-- Item 4 -->
                 <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
                     <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
-                        Como funcionam as Fotos 360 e o Tour Virtual?
+                        O Google Meu Negócio é gratuito?
                         <i class="fas transition-transform duration-300" :class="selected === 4 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
                     </button>
                     <div x-show="selected === 4" x-collapse class="px-6 pb-5 text-[#353738]">
-                        Utilizamos equipamentos específicos para captar imagens imersivas de todos os ângulos do seu ambiente. Depois, conectamos essas fotos diretamente no Google Maps.
+                        Sim. O Perfil da Empresa no Google é uma ferramenta gratuita. Nosso trabalho consiste em otimizar, estruturar e desenvolver estratégias para que sua empresa tenha mais visibilidade, autoridade e melhores resultados nas pesquisas do Google.
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="bg-white rounded-[15px] shadow-sm border border-gray-100 overflow-hidden">
+                    <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full px-6 py-5 text-left font-semibold text-[18px] text-brand-dark flex justify-between items-center focus:outline-none font-outfit">
+                        Como as Fotos 360° e o Tour Virtual ajudam minha empresa?
+                        <i class="fas transition-transform duration-300" :class="selected === 5 ? 'fa-chevron-up text-brand-green' : 'fa-chevron-down'"></i>
+                    </button>
+                    <div x-show="selected === 5" x-collapse class="px-6 pb-5 text-[#353738]">
+                        As Fotos 360° e o Tour Virtual permitem que seus clientes conheçam sua empresa antes mesmo da visita. Essa experiência aumenta a confiança, valoriza seu negócio e fortalece sua presença no Google, contribuindo para uma melhor experiência do usuário.
                     </div>
                 </div>
             </div>
@@ -799,9 +688,9 @@
         <section id="contato" class="relative bg-brand-green py-[7em] text-center px-4 overflow-hidden">
             <div class="absolute inset-0 z-0 bg-[url('assets/img/cta-bg.webp')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
             <div class="relative z-10 max-w-[800px] mx-auto">
-                <h2 class="text-[32px] md:text-[44px] font-bold mb-6 text-white leading-tight font-outfit">Pronto para dominar as buscas locais?</h2>
-                <p class="text-white text-[18px] mb-10 opacity-90">Não deixe seus clientes encontrarem a concorrência antes de você. Clique no botão abaixo e fale com um de nossos especialistas.</p>
-                <a href="https://wa.me/5551998810128" target="_blank" class="btn-secondary text-[16px] px-8 py-4">Chamar no WhatsApp</a>
+                <h2 class="text-[32px] md:text-[44px] font-bold mb-6 text-white leading-tight font-outfit">Pronto para destacar sua empresa no Google?</h2>
+                <p class="text-white text-[18px] mb-10 opacity-90">Aumente sua visibilidade nas pesquisas locais, fortaleça sua presença online e atraia mais clientes. Fale com um de nossos especialistas e descubra como podemos ajudar sua empresa.</p>
+                <a href="https://wa.me/5551998810128" target="_blank" class="btn-secondary text-[16px] px-8 py-4">Falar no WhatsApp</a>
             </div>
         </section>
 
@@ -817,7 +706,7 @@
                 <div class="w-full md:w-[35%]">
                     <img src="assets/img/logo-principal.png?v=1.1" alt="Logo Axtra Venture - Especialista em Google Meu Negócio" class="h-[49px] w-auto mb-6" loading="lazy">
                     <p class="text-[#353738] text-[14px] mb-6 max-w-[300px]">
-                        Axtra Venture é especialista em colocar empresas no topo do Google Meu Negócio, através de SEO Local estratégico e fotografia profissional.
+                        A Axtra Venture é especialista em Google Meu Negócio, SEO Local, criação de sites, Fotos 360° e Tour Virtual, ajudando empresas a fortalecer sua presença no Google e conquistar mais clientes.
                     </p>
                     <div class="flex space-x-3">
                         <a href="https://www.facebook.com/share/1LnPBK9zuu/" target="_blank" aria-label="Facebook" class="w-[35px] h-[35px] rounded-full bg-gray-200 flex items-center justify-center text-brand-green hover:bg-brand-hover hover:text-white transition">
@@ -836,7 +725,6 @@
                         <li><a href="#hero" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Início</a></li>
                         <li><a href="#sobre" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Sobre Nós</a></li>
                         <li><a href="#servicos" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Serviços</a></li>
-                        <li><a href="#como-funciona" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Como Funciona</a></li>
                         <li><a href="#faq" class="text-[#353738] text-[14px] hover:text-brand-hover transition">Dúvidas Frequentes</a></li>
                     </ul>
                 </div>
@@ -847,7 +735,7 @@
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt text-brand-green text-[20px] mt-1 mr-4 w-[20px] text-center"></i>
-                            <span class="text-[#353738] text-[14px]">Sediada em Estância Velha - RS<br>Atendimento em todo o Brasil</span>
+                            <span class="text-[#353738] text-[14px]">Estância Velha - RS<br>Atendimento em todo o Brasil</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fab fa-whatsapp text-brand-green text-[20px] mr-4 w-[20px] text-center"></i>
@@ -855,7 +743,7 @@
                         </li>
                         <li class="flex items-center">
                             <i class="far fa-clock text-brand-green text-[20px] mr-4 w-[20px] text-center"></i>
-                            <span class="text-[#353738] text-[14px]">Segunda a Sexta das 09:00 às 18:00</span>
+                            <span class="text-[#353738] text-[14px]">Segunda a sexta-feira • 09h às 18h</span>
                         </li>
                     </ul>
                 </div>
